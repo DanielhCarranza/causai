@@ -8,7 +8,7 @@ from api.app import app
 os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 REPO_DIRNAME = Path(__file__).parents[2].resolve()
-SUPPORT_DIRNAME = REPO_DIRNAME / "model_core" / "tests" / "support" /
+SUPPORT_DIRNAME = REPO_DIRNAME / "causai" / "tests" / "support" /
 
 
 class TestIntegrations(TestCase):

@@ -1,5 +1,5 @@
 # Causai
-Causai is a framework for Causality in Machine Learning
+Causai is a framework for doing Causality in Machine Learning
 
 ## Codebase
 
@@ -14,10 +14,9 @@ Causai is a framework for Causality in Machine Learning
     - **`models`: Models wrap networks and add functionality like loss functions. saving, loading, and training**
     - **`networks` : Code for constructing ML model, neural net or bayesian net (dumb input | output mappings)**
     - **`tests`: Regression tests for the models code. Make sure a trained model performs well on important examples.**
-    - **`weights`**
     - **`metrics`**
     - **`interpreter`**
-    - `predictor.py`: **wrapper for model that allows you to do inference**
+    - `predictor.py`: **wrapper for model that allows you to do inference in the api**
     - `utils.py`
 
 **`api`**: **Serve predictions. (Contains DockerFiles, Unit Tests, Flask, etc.)** 

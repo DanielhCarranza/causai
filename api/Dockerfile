@@ -6,7 +6,7 @@ RUN set -ex && mkdir /repo
 WORKDIR /repo
 
 # Copy only the relevant directories to the working diretory
-COPY model_core/ ./model_core
+COPY causai/ ./causai
 COPY api/ ./api
 
 # Install Python dependencies
