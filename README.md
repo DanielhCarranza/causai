@@ -1,5 +1,5 @@
 # Causai
-Causai is a framework for doing Causality in Machine Learning. We provide state of the art causal & ML algorithms into decision-making systems.
+Causai is a framework for doing Causality in Machine Learning. We provide state-of-the-art causal & ML algorithms into decision-making systems.
 
 ## Codebase
 

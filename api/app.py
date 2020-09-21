@@ -3,7 +3,7 @@ import os
 
 from flask import Flask, request, jsonify
 
-# from model_core.predictor import Predictor
+# from cuasai.predictor import Predictor
 import causai.util as util
 
 os.environ["CUDA_VISIBLE_DEVICES"] = ""  # Do not use GPU
