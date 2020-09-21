@@ -4,7 +4,7 @@ from typing import Tuple, Union
 import numpy as np
 
 from causai.models import SomeModel
-from causai.datasets import ImageDataset, TextDataset, SomeDataset
+from causai.datasets import SomeDataset
 import causai.util as util
 
 
