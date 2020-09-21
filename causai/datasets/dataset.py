@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse
 import os
 
-from model_core import util
+from causai import util
 
 
 class Dataset:

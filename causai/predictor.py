@@ -3,9 +3,9 @@ from typing import Tuple, Union
 
 import numpy as np
 
-from model_core.models import SomeModel
-from model_core.datasets import ImageDataset, TextDataset, SomeDataset
-import model_core.util as util
+from causai.models import SomeModel
+from causai.datasets import ImageDataset, TextDataset, SomeDataset
+import causai.util as util
 
 
 class Predictor:

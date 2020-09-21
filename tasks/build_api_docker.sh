@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sed 's/tensorflowORpytorch==/tensorflowORpytorch-cpu==/' requirements.txt > api/requirements.txt
+sed 's/pytorch==/pytorch-cpu==/' requirements.txt > api/requirements.txt
 
-docker build -t model_core_api -f api/Dockerfile .
+docker build -t causai -f api/Dockerfile .

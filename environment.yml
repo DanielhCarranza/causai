@@ -1,4 +1,4 @@
-name: your_project_name
+name: causai
 channels:
   - defaults
 dependencies:

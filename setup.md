@@ -3,8 +3,8 @@
 ## 1. Clone the repo
 
 ```sh
-git clone https://github.com/DanielhCarranza/ml-production-template.gitt
-cd ml-production-template
+git clone https://github.com/DanielhCarranza/causai.git
+cd causai
 ```
 
 ## 2. Set up the Python environment
@@ -40,7 +40,7 @@ If you add, remove, or need to update versions of some requirements, edit the `.
 pip-compile requirements.in && pip-compile requirements-dev.in
 ```
 
-Now, every time you work in this directory, make sure to start your session with `conda activate your_project_name`.
+Now, every time you work in this directory, make sure to start your session with `conda activate causai`.
 
 
 # Start Coding!

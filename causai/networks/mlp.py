@@ -1,4 +1,4 @@
-"""Define mlp network function."""
+"""Some ML/DL Algorithm """
 from typing import Tuple
 
 
