@@ -19,7 +19,7 @@ In order to not have to set `PYTHONPATH` in every terminal you open, just add th
 
 ### If on own machine
 
-Run `conda env create` to create an environment called `ml-production-template`, as defined in `environment.yml`.
+Run `conda env create` to create an environment called `causai`, as defined in `environment.yml`.
 This environment will provide us with the right Python version as well as the CUDA and CUDNN libraries.
 We will install Python libraries using `pip-sync`, however, which will let us do three nice things:
 

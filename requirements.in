@@ -10,3 +10,5 @@ tensorflow
 pytorch
 toml
 tqdm
+scikit-learn
+spacy

@@ -1,6 +1,9 @@
 # Causai
 Causai is a framework for doing Causality in Machine Learning. We provide state-of-the-art causal & ML algorithms into decision-making systems.
 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanielhCarranza/causai/master)
+
 ## Codebase
 
 **`notebooks`:** **Examples, Tutorials, Explore and visualize data** 
