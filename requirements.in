@@ -7,7 +7,7 @@ pandas
 opencv-python-headless
 requests
 tensorflow
-pytorch
+torch
 toml
 tqdm
 scikit-learn
