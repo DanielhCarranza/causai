@@ -26,6 +26,18 @@ git clone https://github.com/DanielhCarranza/causai.git
 cd causai
 ```
 
+## Example
+```python
+    import causai
+    from causai.datasets import load_datasets
+    from causai.inference import CausalInference
+    from causai.discovery import AutoDiscovery
+
+```
+
+
+
+
 
 ## Codebase
 
