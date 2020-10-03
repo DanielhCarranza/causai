@@ -18,7 +18,7 @@ class SyntheticDataset(Dataset):
             sodium = (sodium > binary_cutoff).astype(int)
         blood_pressure = beta1 * sodium + 2 * age + np.random.normal(size=n)
         proteinuria = alpha1 * sodium + alpha2 * blood_pressure + np.random.normal(size=n)
-        hypertension = (blood_pressure >= 140).astype(int)  # not used, but could be used for binary outcomes
-        return pd.DataFrame({'blood_pressure': blood_pressure, 'sodium': sodium,
+        hypertension = (blood_pressure >= 140).astype(int)
+        return pd.DataFrame({'blood_pressure': blood_pressure, 'sodium': sodium,'hypertension':hypertension,
                             'age': age, 'proteinuria': proteinuria})
 
