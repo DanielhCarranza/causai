@@ -1,4 +1,5 @@
 """Causal Discovery Algorithnms  """
+import networkx as nx 
 
 class GES():
     """GES algorithm **[R model]**.
