@@ -3,7 +3,7 @@ import networkx as nx
 import pandas as pd 
 
 class GES():
-    """GES algorithm **[R model]**.
+    """GES algorithm 
     **Description:** Greedy Equivalence Search algorithm. A score-based
     Bayesian algorithm that searches heuristically the graph which minimizes
     a likelihood score on the data.
@@ -25,15 +25,6 @@ class GES():
         Returns:
             networkx.DiGraph: Solution given by the GES algorithm.
         """
-        # Building setup w/ arguments.
-        fe = pd.DataFrame(nx.adj_matrix(graph, weight=None).todense())
-        fg = pd.DataFrame(1 - fe.values)
-
-        results = self._run_ges(data, fixedGaps=fg, verbose=self.verbose)
-
-        return nx.relabel_nodes(nx.DiGraph(results),
-                                {idx: i for idx, i in enumerate(data.columns)})
-
     def orient_directed_graph(self, data, graph):
         """Run GES on a directed graph.
         Args:
@@ -42,8 +33,6 @@ class GES():
         Returns:
             networkx.DiGraph: Solution given by the GES algorithm.
         """
-        return self.orient_undirected_graph(data, nx.Graph(graph))
-
     def create_graph_from_data(self, data):
         """Run the GES algorithm.
         Args:
@@ -51,8 +40,3 @@ class GES():
         Returns:
             networkx.DiGraph: Solution given by the GES algorithm.
         """
-
-        results = self._run_ges(data, verbose=self.verbose)
-
-        return nx.relabel_nodes(nx.DiGraph(results),
-                                {idx: i for idx, i in enumerate(data.columns)})
