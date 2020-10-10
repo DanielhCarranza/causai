@@ -1,5 +1,6 @@
 """Causal Discovery Algorithnms  """
 import networkx as nx 
+import pandas as pd 
 
 class GES():
     """GES algorithm **[R model]**.
@@ -25,8 +26,8 @@ class GES():
             networkx.DiGraph: Solution given by the GES algorithm.
         """
         # Building setup w/ arguments.
-        fe = DataFrame(nx.adj_matrix(graph, weight=None).todense())
-        fg = DataFrame(1 - fe.values)
+        fe = pd.DataFrame(nx.adj_matrix(graph, weight=None).todense())
+        fg = pd.DataFrame(1 - fe.values)
 
         results = self._run_ges(data, fixedGaps=fg, verbose=self.verbose)
 
