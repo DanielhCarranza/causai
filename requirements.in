@@ -12,3 +12,5 @@ spacy
 networkx
 dowhy
 pgmpy
+causalnex
+cdt

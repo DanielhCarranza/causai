@@ -14,7 +14,7 @@ bleach==3.1.4             # via nbconvert
 blessings==1.7            # via gpustat
 certifi==2020.6.20        # via -c requirements.txt, matplotlib, pipenv, requests, sentry-sdk
 chardet==3.0.4            # via -c requirements.txt, requests
-click==7.1.2              # via black, safety, wandb
+click==7.1.2              # via -c requirements.txt, black, safety, wandb
 configparser==5.0.0       # via wandb
 cycler==0.10.0            # via -c requirements.txt, matplotlib
 decorator==4.4.2          # via -c requirements.txt, ipython, traitlets
@@ -40,7 +40,7 @@ ipython==7.13.0           # via ipykernel
 isort==4.3.21             # via pylint
 itermplot==0.331          # via -r requirements-dev.in
 jedi==0.16.0              # via ipython
-jinja2==2.11.2            # via jupyterlab, jupyterlab-server, nbconvert, notebook
+jinja2==2.11.2            # via -c requirements.txt, jupyterlab, jupyterlab-server, nbconvert, notebook
 json5==0.9.4              # via jupyterlab-server
 jsonschema==3.2.0         # via jupyterlab-server, nbformat
 jupyter-client==6.1.2     # via ipykernel, notebook
@@ -49,7 +49,7 @@ jupyterlab-server==1.0.7  # via jupyterlab
 jupyterlab==2.0.1         # via -r requirements-dev.in
 kiwisolver==1.2.0         # via -c requirements.txt, matplotlib
 lazy-object-proxy==1.4.3  # via astroid
-markupsafe==1.1.1         # via jinja2
+markupsafe==1.1.1         # via -c requirements.txt, jinja2
 matplotlib==3.3.2         # via -c requirements.txt, -r requirements-dev.in, itermplot
 mccabe==0.6.1             # via pylint
 mistune==0.8.4            # via nbconvert
@@ -115,7 +115,7 @@ wandb==0.8.31             # via -r requirements-dev.in
 watchdog==0.10.2          # via wandb
 wcwidth==0.1.9            # via prompt-toolkit, pytest
 webencodings==0.5.1       # via bleach
-wrapt==1.11.2             # via astroid
+wrapt==1.11.2             # via -c requirements.txt, astroid
 zipp==3.2.0               # via -c requirements.txt, importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
