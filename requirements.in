@@ -11,3 +11,5 @@ tqdm
 scikit-learn
 spacy
 networkx
+dowhy
+pgmpy
