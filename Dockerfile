@@ -6,8 +6,9 @@ FROM mancunian1792/causal_inference:latest
 
 COPY . /build
 WORKDIR /build
-
-RUN python3.7 -m pip install -r requirements.txt
+# Install Python dependencies
+RUN pip install --upgrade pip
+RUN python3.7 -m pip install -r requirements.txt 
 ENV PYTHONPATH="/mnt:${PYTHONPATH}" 
 WORKDIR /mnt
 RUN rm -rf /build
