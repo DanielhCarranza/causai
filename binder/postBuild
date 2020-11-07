@@ -1,5 +1,6 @@
 set -ex
-
+pip install invoke pyyaml
+invoke build --env-name=root --no-kernel
 jupyter lab clean
 
 # Setup a workspace
