@@ -8,18 +8,18 @@ dependencies:
 - widgetsnbextension=3.5
 # Python Kernel
 - python=3.7
-- ipykernel=5.1
-- ipywidgets=7.5
-- ipyleaflet=0.12
-- altair=3.1
-- bqplot=0.12
-- matplotlib=3.1
-- pandas=0.24
-- scikit-learn=0.21
-- seaborn=0.9
-- sympy=1.4
+- ipykernel
+- ipywidgets
+- ipyleaflet
+- altair
+- bqplot
+- matplotlib
+- pandas
+- scikit-learn
+- seaborn
+- sympy
 - pyyaml
-- traittypes==0.2.1
+- traittypes
 - invoke
 
 # R Kernel

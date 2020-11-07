@@ -1,5 +1,5 @@
 set -ex
-
+pip install invoke
 invoke build --env-name=root --no-kernel
 invoke demofiles
 invoke talk -t demo
