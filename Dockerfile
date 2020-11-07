@@ -1,4 +1,6 @@
 FROM mancunian1792/causal_inference:latest
+COPY . /build
+WORKDIR /build
 # Binder Config
 RUN pip install --no-cache notebook
 ENV HOME=/tmp
@@ -15,8 +17,7 @@ WORKDIR ${HOME}
 
 
 # Repo Config 
-COPY . /build
-WORKDIR /build
+
 # Install Python dependencies
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir notebook==5.*
