@@ -1,6 +1,6 @@
 set -ex
-pip install invoke
-pip install yaml 
+
+
 invoke build --env-name=root --no-kernel
 invoke demofiles
 invoke talk -t demo
