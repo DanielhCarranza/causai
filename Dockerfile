@@ -1,21 +1,21 @@
-# FROM mancunian1792/causal_inference:latest
+FROM mancunian1792/causal_inference:latest
 
 
-# COPY . /build
-# WORKDIR /build
+# COPY . /mnt
+# WORKDIR /mnt
 # # Install Python dependencies
 # RUN pip install --upgrade pip
 # RUN pip install --no-cache-dir notebook==5.*
 # RUN python3.7 -m pip install -r requirements.txt 
 # ENV PYTHONPATH="/mnt:${PYTHONPATH}" 
 
-# RUN rm -rf /build
+# RUN rm -rf /mnt
 
 
 # RUN pip install --no-cache --upgrade pip && \
 #     pip install --no-cache notebook
 
-FROM python:3.7-slim
+# FROM python:3.7-slim
 RUN pip install --no-cache notebook
 ENV HOME=/tmp
 
@@ -31,6 +31,5 @@ RUN adduser --disabled-password \
     ${NB_USER}
 WORKDIR ${HOME}
 
-
-
 # RUN pip install --no-cache-dir notebook==5.*
+
