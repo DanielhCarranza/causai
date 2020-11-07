@@ -42,6 +42,11 @@ pip-compile requirements.in && pip-compile requirements-dev.in
 
 Now, every time you work in this directory, make sure to start your session with `conda activate causai`.
 
+### Start with Docker 
 
+```sh
+docker-compose up -d
+docker ps -a
+```
 # Start Coding!
 

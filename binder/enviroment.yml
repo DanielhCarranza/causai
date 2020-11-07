@@ -13,16 +13,14 @@ dependencies:
 - ipyleaflet=0.12
 - altair=3.1
 - bqplot=0.12
-- dask=2.1
 - matplotlib=3.1
 - pandas=0.24
-- scikit-image=0.15
 - scikit-learn=0.21
 - seaborn=0.9
 - sympy=1.4
 - pyyaml
 - traittypes==0.2.1
-- invoke=1.2
+- invoke
 
 # R Kernel
 - r-ggplot2
