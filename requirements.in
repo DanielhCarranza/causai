@@ -1,15 +1,8 @@
 boltons
-editdistance
-flask
-h5py
 numpy
 pandas
-requests
-torch
-toml
 tqdm
 scikit-learn
-spacy
 networkx
 dowhy
 pgmpy
