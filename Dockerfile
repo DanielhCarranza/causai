@@ -13,9 +13,12 @@
 # RUN rm -rf /build
 
 FROM jupyter/scipy-notebook:95ccda3619d0
-RUN pip install --no-cache-dir notebook==5.*
 
-ARG NB_USER=jovyan
+RUN pip install --no-cache-dir notebook==5.*
+RUN pip install --no-cache --upgrade pip && \
+    pip install --no-cache notebook
+
+ARG NB_USER=causai
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
@@ -25,7 +28,7 @@ RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
     ${NB_USER}
-    
+
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
 USER root
