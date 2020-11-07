@@ -15,14 +15,15 @@ WORKDIR ${HOME}
 
 
 # Repo Config 
-COPY . /mnt
-WORKDIR /mnt
+COPY . /build
+WORKDIR /build
 # Install Python dependencies
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir notebook==5.*
 RUN python3.7 -m pip install -r requirements.txt 
 ENV PYTHONPATH="/mnt:${PYTHONPATH}" 
-RUN rm -rf /mnt
+WORKDIR /mnt
+RUN rm -rf /build
 
 
 # RUN pip install --no-cache --upgrade pip && \
