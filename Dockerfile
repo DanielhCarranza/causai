@@ -12,8 +12,8 @@
 # RUN rm -rf /build
 
 
-RUN pip install --no-cache --upgrade pip && \
-    pip install --no-cache notebook
+# RUN pip install --no-cache --upgrade pip && \
+#     pip install --no-cache notebook
 
 FROM python:3.7-slim
 RUN pip install --no-cache notebook
@@ -33,4 +33,4 @@ WORKDIR ${HOME}
 
 
 
-RUN pip install --no-cache-dir notebook==5.*
+# RUN pip install --no-cache-dir notebook==5.*
