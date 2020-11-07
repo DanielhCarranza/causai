@@ -4,93 +4,39 @@
 #
 #    pip-compile requirements.in
 #
-<<<<<<< HEAD
 boltons==20.0.0           # via -r requirements.in
-certifi==2020.6.20        # via matplotlib
-cycler==0.10.0            # via matplotlib
-decorator==4.4.2          # via networkx
-dowhy==0.4                # via -r requirements.in
-future==0.18.2            # via torch
-joblib==0.16.0            # via pgmpy, scikit-learn
-kiwisolver==1.3.1         # via matplotlib
-matplotlib==3.3.2         # via dowhy
-mpmath==1.1.0             # via sympy
-networkx==2.5             # via -r requirements.in, dowhy, pgmpy
-numpy==1.18.2             # via -r requirements.in, dowhy, matplotlib, pandas, patsy, pgmpy, scikit-learn, scipy, statsmodels, torch
-pandas==1.1.2             # via -r requirements.in, dowhy, pgmpy, statsmodels
-patsy==0.5.1              # via statsmodels
-pgmpy==0.1.12             # via -r requirements.in
-pillow==8.0.1             # via matplotlib
-pydot==1.4.1              # via dowhy
-pyparsing==2.4.7          # via matplotlib, pgmpy, pydot
-python-dateutil==2.8.1    # via matplotlib, pandas
-pytz==2020.1              # via pandas
-scikit-learn==0.23.2      # via -r requirements.in, dowhy, pgmpy
-scipy==1.4.1              # via dowhy, pgmpy, scikit-learn, statsmodels
-six==1.14.0               # via cycler, patsy, python-dateutil
-statsmodels==0.12.1       # via dowhy, pgmpy
-sympy==1.6.2              # via dowhy
-threadpoolctl==2.1.0      # via scikit-learn
-torch==1.6.0              # via pgmpy
-tqdm==4.44.1              # via -r requirements.in, pgmpy
-=======
-blis==0.4.1               # via spacy, thinc
-boltons==20.0.0           # via -r requirements.in
-catalogue==1.0.0          # via spacy, thinc
 causalnex==0.8.1          # via -r requirements.in
 cdt==0.5.21               # via -r requirements.in
 certifi==2020.6.20        # via matplotlib, requests
 chardet==3.0.4            # via requests
-click==7.1.2              # via flask
 cycler==0.10.0            # via matplotlib
-cymem==2.0.3              # via preshed, spacy, thinc
 decorator==4.4.2          # via networkx
 dowhy==0.4                # via -r requirements.in
-editdistance==0.5.3       # via -r requirements.in
-flask==1.1.2              # via -r requirements.in
 gputil==1.4.0             # via cdt
-h5py==2.10.0              # via -r requirements.in
 idna==2.9                 # via requests
-importlib-metadata==1.7.0  # via catalogue
-itsdangerous==1.1.0       # via flask
-jinja2==2.11.2            # via flask
 joblib==0.16.0            # via cdt, scikit-learn
 kiwisolver==1.2.0         # via matplotlib
-markupsafe==1.1.1         # via jinja2
 matplotlib==3.3.2         # via dowhy
 mpmath==1.1.0             # via sympy
-murmurhash==1.0.2         # via preshed, spacy, thinc
 networkx==2.4             # via -r requirements.in, causalnex, cdt, dowhy, pgmpy
-numpy==1.18.2             # via -r requirements.in, blis, causalnex, cdt, dowhy, h5py, matplotlib, pandas, patsy, pgmpy, scikit-learn, scipy, skrebate, spacy, statsmodels, thinc
+numpy==1.18.2             # via -r requirements.in, causalnex, cdt, dowhy, matplotlib, pandas, patsy, pgmpy, scikit-learn, scipy, skrebate, statsmodels
 pandas==0.25.3            # via -r requirements.in, causalnex, cdt, dowhy, statsmodels
 patsy==0.5.1              # via statsmodels
 pgmpy==0.1.6              # via -r requirements.in, causalnex
 pillow==8.0.1             # via matplotlib
-plac==1.1.3               # via spacy, thinc
-preshed==3.0.2            # via spacy, thinc
 prettytable==0.7.2        # via causalnex
 pydot==1.4.1              # via dowhy
 pyparsing==2.4.7          # via matplotlib, pydot
 python-dateutil==2.8.1    # via matplotlib, pandas
 pytz==2020.1              # via pandas
-requests==2.23.0          # via -r requirements.in, cdt, spacy
+requests==2.23.0          # via -r requirements.in, cdt
 scikit-learn==0.22.2      # via -r requirements.in, causalnex, cdt, dowhy, skrebate
 scipy==1.4.1              # via causalnex, cdt, dowhy, pgmpy, scikit-learn, skrebate, statsmodels
-six==1.14.0               # via cycler, h5py, patsy, python-dateutil
+six==1.14.0               # via cycler, patsy, python-dateutil
 skrebate==0.61            # via cdt
-spacy==2.3.2              # via -r requirements.in
-srsly==1.0.2              # via spacy, thinc
 statsmodels==0.12.0       # via cdt, dowhy
 sympy==1.6.2              # via dowhy
-thinc==7.4.1              # via spacy
 toml==0.10.0              # via -r requirements.in
-tqdm==4.44.1              # via -r requirements.in, cdt, spacy, thinc
+tqdm==4.44.1              # via -r requirements.in, cdt
 urllib3==1.25.8           # via requests
-wasabi==0.8.0             # via spacy, thinc
-werkzeug==1.0.1           # via flask
 wrapt==1.11.2             # via causalnex
-zipp==3.2.0               # via importlib-metadata
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
->>>>>>> b656c69b4ae2ba8381e03c6f0a0b02df3dd09ab7
