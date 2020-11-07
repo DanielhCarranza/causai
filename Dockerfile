@@ -13,9 +13,9 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 COPY . ${HOME}
-# USER root
-# RUN chown -R ${NB_UID} ${HOME}
-# USER ${NB_USER}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}
 
 # Repo Config 
 WORKDIR ${HOME}
@@ -28,6 +28,4 @@ RUN python3.7 -m pip install -r requirements.txt
 ENV PYTHONPATH="/mnt:${PYTHONPATH}" 
 # WORKDIR /mnt
 # RUN rm -rf /build
-ENTRYPOINT bash -c "jupyter notebook --NotebookApp.token='' --ip=0.0.0.0 --allow-root && /bin/bash" 
-
-# RUN pip install --no-cache --upgrade pip && \ #     pip install --no-cache notebook 
+ 
