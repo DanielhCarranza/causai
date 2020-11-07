@@ -1,0 +1,29 @@
+channels:
+- conda-forge
+dependencies:
+# Jupyter
+- jupyterlab
+- nodejs=11
+- nbconvert=5.5
+- widgetsnbextension=3.5
+# Python Kernel
+- python=3.7
+- ipykernel=5.1
+- ipywidgets=7.5
+- ipyleaflet=0.12
+- altair=3.1
+- bqplot=0.12
+- dask=2.1
+- matplotlib=3.1
+- pandas=0.24
+- scikit-image=0.15
+- scikit-learn=0.21
+- seaborn=0.9
+- sympy=1.4
+- pyyaml
+- traittypes==0.2.1
+- invoke=1.2
+
+# R Kernel
+- r-ggplot2
+- r-irkernel=1.0
