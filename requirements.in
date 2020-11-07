@@ -1,11 +1,8 @@
 boltons
 numpy
 pandas
-<<<<<<< HEAD
-=======
 requests
 toml
->>>>>>> b656c69b4ae2ba8381e03c6f0a0b02df3dd09ab7
 tqdm
 scikit-learn
 networkx
