@@ -22,9 +22,9 @@ WORKDIR ${HOME}
 # COPY . /build
 # WORKDIR /build
 # Install Python dependencies
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir notebook==5.*
-RUN python3.7 -m pip install -r requirements.txt 
+RUN sudo pip install --upgrade pip
+RUN sudo pip install --no-cache-dir notebook==5.*
+RUN sudo python3.7 -m pip install -r requirements.txt 
 ENV PYTHONPATH="/mnt:${PYTHONPATH}" 
 # WORKDIR /mnt
 # RUN rm -rf /build
