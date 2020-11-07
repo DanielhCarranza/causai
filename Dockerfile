@@ -1,11 +1,10 @@
 FROM mancunian1792/causal_inference:latest
-COPY . /build
-WORKDIR /build
+
 # Binder Config
 RUN pip install --no-cache notebook
 ENV HOME=/tmp
-ARG NB_USER
-ARG NB_UID
+ARG NB_USER=causai
+ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV HOME /home/${NB_USER}
 
@@ -13,11 +12,12 @@ RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
     ${NB_USER}
-WORKDIR ${HOME}
+COPY . ${HOME}
 
 
 # Repo Config 
-
+COPY . /build
+WORKDIR /build
 # Install Python dependencies
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir notebook==5.*
